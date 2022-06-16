@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "bootstrap": "^5.2.0-beta1"
-  },
-    "scripts": {
-      "build": "[my-framework] build --output public"
-    }
+    "bootstrap": "^5.2.0-beta1",
+    "vercel": "^25.1.0"
   }
+}
