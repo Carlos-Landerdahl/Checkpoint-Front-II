@@ -1,73 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container__header{ 
-    padding: 20px 0;
-    width: 100vw;
-    height: 20vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+body {
+    font-family: 'Lato', sans-serif;
 }
 
-.header__menu {
-    height: 100px;
-    list-style-type: none;
+
+.nav-link {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.btn {
+    transform: scale(1.2);
+    font-weight: 700;
+}
+
+.img--banner {
+    background-image: url(/images/img-banner.jpg);
+    filter: brightness(20%);
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+}
+
+.banner--text {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.header__itens {
-    list-style-type: none;
-}
-
-.img__main {
-    background-image: url("/images/img-banner.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-    width: 100%;
-    filter: brightness(0.1);
+    flex-direction: column;
+    position: absolute;
+    top: 33%;
 
 }
 
-.container__main__content {
-    position: absolute;   
-    top: 50%;
+.banner--text h1,p,span {
+    animation:scale-up-center 1s both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.banner--text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(233, 45, 45);
     text-align: center;
 }
-
-.container__main__content h1 {
-    color: #E51B3E;
+.banner--text p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px;
+    color: aliceblue;
 }
 
-.container__main__content p {
-    padding: 10px 40px;
-    color: white;
+.banner--text span {
+    color: rgb(233, 45, 45);
+    font-weight: bold;
 }
 
-.button__main {
-    background-color: transparent;
-    margin-top: 20px;
-    padding: 20px 70px;
-    border: 1px solid green;
-    border-radius: 5px;
-    cursor: pointer;
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-
-.button__main {
-    text-decoration: none;
-    color: white;
-}
-
-
-
 
 

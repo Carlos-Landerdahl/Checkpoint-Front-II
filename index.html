@@ -3,35 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Checkpoint-Front-II</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">  
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="container__header">
-        <img src="images/img-logo.svg" alt="Imagem logo da Digital house.">
-        <div class="header__menu">
-            <ul>
-                <li class="header__itens">Home</li>
-                <li class="header__itens">Itens</li>
-                <li class="header__itens">Sobre Nós</li>
-                <li class="header__itens">Login</li>
-            </ul>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand me-5" href="#"><img src="images/img-logo.svg" alt="Imagem logo da empresa DigitalHouse"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contatos</a>
+                    </li>
+                </ul>
+                <form class="d-flex me-5">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Login
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Faça seu login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Endereço de email</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                                    <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém..</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="senha" class="form-label">Senha</label>
+                                    <input type="password" class="form-control" id="senha" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Matenha-me conectado</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
         </div>
-    </header>
+    </nav>
+
     <main>
-        <div class="container__main">
-            <div class="img__main"></div>
-            <div class="container__main__content">
+        <div class="img--banner"></div>
+            <div class="banner--text">
                 <h1>DH Trips</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quisquam, quidem, quisquam.
-                </p>
-                <button class="button__main" type="button">Explorar</button>
-        </div>
-        
+                <p>Destinos e lugares para viajar, nosso site oferece todos os tipos de pacotes para todos os tipos de pessoas, veja mais sobre nossos combos e promoções e venha ser um louco por <span>TRIP</span>.</p>
+            </div>
     </main>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
