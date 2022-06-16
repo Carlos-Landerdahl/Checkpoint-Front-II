@@ -22,7 +22,7 @@ body {
 }
 
 .img--banner {
-    background-image: url(/images/img-banner.jpg);
+    background-image: url(../images/img-banner.jpg);
     filter: brightness(20%);
     background-size: cover;
     background-position: center;
