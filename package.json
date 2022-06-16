@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "bootstrap": "5",
-    "vercel": "^25.1.0"
-  }
-}
