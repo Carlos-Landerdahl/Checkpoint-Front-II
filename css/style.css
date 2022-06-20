@@ -27,16 +27,14 @@ body {
     background-size: cover;
     background-position: center;
     height: 92vh;
+    position: relative;
 }
 
 .banner--text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 100%;
+    text-align: center;
     position: absolute;
     top: 33%;
-
 }
 
 .banner--text h1,p,span {
