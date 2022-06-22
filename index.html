@@ -24,10 +24,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="container-fluid nav-item">
-                        <a class="nav-link" href="#">Pacotes</a>
+                        <a class="nav-link" href="#card-main">Pacotes</a>
                     </li>
                     <li class="container-fluid nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
+                        <a class="nav-link" href="#footer">Sobre</a>
                     </li>
                 </ul>
                 <form class="d-flex me-5">
@@ -46,22 +46,31 @@
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Endereço de email</label>
                                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
-                                    <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém..</div>
+                                    <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail...</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="senha" class="form-label">Senha</label>
                                     <input type="password" class="form-control" id="senha" required>
                                 </div>
+                                <div class="mb-3">
+                                    <label for="idade" class="form-label">Data de nascimento</label>
+                                    <input type="date" class="form-control" id="idade" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="numero" class="form-label">Número de</label>
+                                    <input type="number" class="form-control" id="numeor">
+                                </div>
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="exampleCheck1">Matenha-me conectado</label>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                
                             </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                            <button type="button" class="btn btn-primary">Salvar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <!-- <button type="button" class="btn btn-primary">Salvar</button> -->
                         </div>
                         </div>
                     </div>
@@ -76,6 +85,7 @@
             <div class="banner--text">
                 <h1>DH Trips</h1>
                 <p>Destinos e lugares para viajar, nosso site oferece todos os tipos de pacotes para todos os tipos de pessoas, veja mais sobre nossos combos e promoções e venha ser um louco por <span>TRIP</span>.</p>
+                <button><a href="#card-main">Explorar</a></button>
             </div>
     </main>
     <!-- CARDS--REFERS -->
@@ -116,7 +126,7 @@
           </div>
     </section>
    <!-- CARDS--MAIN -->
-   	<div class="container__cards-main">
+   	<div id="card-main" class="container__cards-main">
         <section class="cards__main">
                 <div class="card__img"><img src="images/rj.jpg" alt="Imagem representativa da cidade do Rio de Janeiro" /></div>
                 <div class="card__title">
@@ -134,6 +144,7 @@
                     <p>R$ <span>851</span></p>
                     <p>Taixas e impostos não inclusos</p>
                 </div>
+                <button><a href="#">Ver mais</a></button>
             </section>
 
             <section class="cards__main">
@@ -153,6 +164,7 @@
                     <p>R$ <span>930</span></p>
                     <p>Taixas e impostos não inclusos</p>
                 </div>
+                <button><a href="#">Ver mais</a></button>
             </section>
 
             <section class="cards__main">
@@ -172,6 +184,7 @@
                     <p>R$ <span>1.120</span></p>
                     <p>Taixas e impostos não inclusos</p>
                 </div>
+                <button><a href="#">Ver mais</a></button>
             </section>
 
             <section class="cards__main">
@@ -191,6 +204,7 @@
                     <p>R$ <span>1.050</span></p>
                     <p>Taixas e impostos não inclusos</p>
                 </div>
+                <button><a href="#">Ver mais</a></button>
             </section>
 
             <section class="cards__main">
@@ -210,6 +224,7 @@
                     <p>R$ <span>1.050</span></p>
                     <p>Taixas e impostos não inclusos</p>
                 </div>
+                <button><a href="#">Ver mais</a></button>
             </section>
 
             <section class="cards__main">
@@ -229,6 +244,7 @@
                     <p>R$ <span>1.989</span></p>
                     <p>Taixas e impostos não inclusos</p>
                 </div>
+                <button><a href="#">Ver mais</a></button>
             </section>
 
             <section class="cards__main">
@@ -248,6 +264,7 @@
                     <p>R$ <span>1.880</span></p>
                     <p>Taixas e impostos não inclusos</p>
                 </div>
+                <button><a href="#">Ver mais</a></button>
             </section>
 
             <section class="cards__main">
@@ -267,16 +284,27 @@
                     <p>R$ <span>1.050</span></p>
                     <p>Taixas e impostos não inclusos</p>
                 </div>
+                <button><a href="#">Ver mais</a></button>
             </section>
+
+            
     </div>
-
-
-   
-
-
-
-
-
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container__foot">
+            <div class="foot__content">
+                <h1>Carlos Roberto Landerdahl Neto</h1>
+                <p>Responsável pelo desenvolvimento da página</p>
+            </div>
+            <div class="foot__social">
+                <a href="https://www.linkedin.com/in/carloslanderdahl/" target="_blank"><img src="images/linkedin.svg" alt="Imagem logo do linkedin"></a>
+                <a href="https://github.com/Carlos-Landerdahl" target="_blank"><img src="images/git.svg" alt="Imagem logo do GitHub"></a>
+            </div>
+            <p class="foot">
+                Checkpoint 3 desenvolvido em 2021
+            </p>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
