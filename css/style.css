@@ -544,6 +544,10 @@ body {
    color: #fff;
 }
 
+/**! ---------------------------------------- CAROUSEL------------------------------------------------*/
+
+
+
 /**! ---------------------------------------- RESPONSIVE------------------------------------------------*/
 @media (min-width: 368px){
    .container__cards-main{
@@ -572,7 +576,7 @@ body {
 
 @media (min-width: 768px) {
    .container__cards-main {
-      padding: 0 22px;
+      padding: 0 100px;
    }
    .cards__main {
      transition: all 0.3s ease; 
@@ -580,10 +584,7 @@ body {
    .cards__main:hover {
    transform: scale(1.02);
    }
-} 
-
-@media (min-width: 768px){
-   .container__cards-main {
-      padding: 0 100px;
+   .banner--text p {
+      padding: 30px 100px;
    }
-}
+} 
